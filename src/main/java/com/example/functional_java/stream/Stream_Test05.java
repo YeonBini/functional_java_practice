@@ -112,8 +112,8 @@ public class Stream_Test05 {
         for(int i=0; i<5; i++) {
             BigDecimal price = targetPrices[targetPricesRandom.nextInt(3)];
 
-            streamTest(price, true);
             parallelStreamTest(price, true);
+            streamTest(price, true);
             imperativeTest(price, true);
         }
     }
